@@ -16,7 +16,6 @@ class SecondViewController2: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
     @IBAction func firstButtonPressed(_ sender: Any) {
     }
     /*
@@ -28,16 +27,25 @@ class SecondViewController2: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+   
     @IBAction func secondButtonPressed(_ sender: Any) {
     }
     
     
-    @IBAction func changeColorButtonPressed(_ sender: Any) {
-    } self.view.backgroundcolor = color.blue
+    @IBAction func changeColorButtonPressed(_ sender: Any)
+    {
+        self.view.backgroundColor = UIColor.green
+    }
+
+
+    
+    @IBOutlet weak var firstLabel: UILabel!
+    
+    @IBAction func changeLabelTextButtonPressed(_ sender: Any)
+    {
+        firstLabel.text = "I feel confident with the Xcode troubleshooting process"
+    }
     
     
     
-}
-@IBAction func changeLabelTextButtonPressed(_ sender: Any) {
-    firstLabel.text = I feel confident with the Xcode troubleshooting process"
 }
